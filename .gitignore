@@ -1,0 +1,5 @@
+# Private context files (not for version control)
+private/
+*.local.json
+.env
+.env.*
