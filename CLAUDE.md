@@ -13,7 +13,7 @@ Linear project: Personal Agent Engine
 Agent label: agent-instructions
 Status ledger issue: OE-7
 Optional standing skill directory: OE-8
-Subscribed optional skills: none
+Subscribed optional skills: visible-grok-claude-delegation (OE-11)
 Private sources: none
 
 ---
