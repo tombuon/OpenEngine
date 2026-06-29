@@ -47,6 +47,8 @@ Private sources: none
 |---|---|---|
 | OE-6 | [standing_skill] Install Open Agent Engine core context v1 | standing skill |
 | OE-7 | [standing_status] Open Agent Engine status ledger | status ledger |
+| OE-9 | [standing_skill] Open Agent Engine routing map v1 | standing skill |
+| OE-10 | [standing_skill] Install Open Agent Engine private context v1 | standing skill (private) |
 
 ---
 
