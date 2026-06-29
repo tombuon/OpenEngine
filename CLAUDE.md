@@ -77,6 +77,27 @@ Next: <next action, or 'none'>
 Blockers: <blocker, or 'none'>
 ```
 
+## Agent status
+
+On every run, update your single AGENT STATUS comment on OE-7 in place (do not add a new comment — edit the existing one):
+
+```
+AGENT STATUS
+Agent: tom-claude
+Human/operator: Tom (tom@fillalifemedia.com)
+Runtime: Claude Code
+Automation: Claude Code on web
+Automation state: <installed | manual-required | blocked | paused>
+Last heartbeat: <ISO8601 timestamp>
+Last queue result: <checking | none | observed OE-X | claimed OE-X | completed OE-X | blocked OE-X | holding OE-X | resumed OE-X | failed OE-X>
+Last successful run: <ISO8601 timestamp or unknown>
+Local context: Open Agent Engine v1; routing map OE-9 v1
+Optional skills: visible-agent-delegation@v2 subscribed
+Notes: <none or short blocker>
+```
+
+Use `blocked OE-X` for Linear-answerable blockers, `holding OE-X` for human-thread holds, and `completed OE-X` only after the task is fully done.
+
 ---
 
 ## Linear MCP

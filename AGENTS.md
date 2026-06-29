@@ -68,6 +68,29 @@ Summary of standing behaviors:
   - OE-10 — private context v1 (read each session)
   - OE-12 — visible-agent-delegation v2 (subscribed)
 
+## Agent status
+
+On every run, update your single AGENT STATUS comment on OE-7 in place (do not add a new comment — edit the existing one):
+
+```
+AGENT STATUS
+Agent: tom-codex
+Human/operator: Tom (tom@fillalifemedia.com)
+Runtime: Codex
+Automation: <automation name or manual>
+Automation state: <installed | manual-required | blocked | paused>
+Last heartbeat: <ISO8601 timestamp>
+Last queue result: <checking | none | observed OE-X | claimed OE-X | completed OE-X | blocked OE-X | holding OE-X | resumed OE-X | failed OE-X>
+Last successful run: <ISO8601 timestamp or unknown>
+Local context: Open Agent Engine v1; routing map OE-9 v1
+Optional skills: visible-agent-delegation@v2 subscribed
+Notes: <none or short blocker>
+```
+
+Use `blocked OE-X` for Linear-answerable blockers, `holding OE-X` for human-thread holds, and `completed OE-X` only after the task is fully done.
+
+---
+
 ## Manual fallback (if Codex cannot reach Linear directly)
 
 Tom will paste the contents of OE-6, OE-7, OE-9, OE-10, and OE-12 into the Codex thread at session start. Write ledger entries and receipts as plain text; Tom pastes them into Linear.
